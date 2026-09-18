@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QVAC Study Buddy - Local AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="badge">QVAC • ON-DEVICE AI</div>
+    <h1>Study Buddy</h1>
+    <p class="subtitle">Ask a question. Your answer is generated locally on this machine.</p>
+
+    <div class="card">
+      <label for="question">Your question</label>
+      <textarea id="question" rows="4" placeholder="Type your question here..."></textarea>
+
+      <button id="askBtn">Ask</button>
+
+      <div id="status" class="status"></div>
+
+      <div id="answerBox" class="answer-box hidden">
+        <h3>Answer</h3>
+        <p id="answerText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
