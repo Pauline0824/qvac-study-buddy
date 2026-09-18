@@ -1,28 +1,27 @@
-
 # QVAC Study Buddy
 
 A local AI study assistant powered by Tether's QVAC SDK.
 
 ## Description
 
-QVAC Study Buddy is a local AI application that helps students understand programming concepts. It runs AI inference on the user's device using the QVAC SDK.
+QVAC Study Buddy is a web app that helps students understand programming and academic concepts. Type a question in your browser and get an AI-generated answer — all inference runs on your own device using the QVAC SDK, with no cloud API and no data leaving your machine.
 
 ## Features
 
-- AI-generated study explanations
-- Local AI model execution
-- No cloud AI API key required
-- Simple command-line interface
+- AI-generated study explanations, answered in a browser UI
+- Local AI model execution (no cloud API key required)
+- Simple, clean web interface — type a question, click Ask
 
 ## Technologies
 
 - Node.js
-- JavaScript
+- Express
 - QVAC SDK
+- HTML / CSS / JavaScript (frontend)
 
 ## QVAC SDK Version
 
-@qvac/sdk 0.19.0
+@qvac/sdk ^0.19.1
 
 ## Installation
 
@@ -30,11 +29,17 @@ QVAC Study Buddy is a local AI application that helps students understand progra
 2. Open the project folder in the terminal.
 3. Install dependencies:
 
+```bash
 npm install
+```
 
 ## Run the App
 
-node app.js
+```bash
+node server.js
+```
+
+Then open `http://localhost:3000` in your browser.
 
 ## QVAC Functions
 
